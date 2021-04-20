@@ -21,7 +21,7 @@
         <div class="navbar-links">
             <ul>
                 <li><a href="#">Resume</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#footer">Contact</a></li>
                 <li><a href="#">My Work</a></li>
             </ul>
         </div>
@@ -31,178 +31,217 @@
     <section class="container">
         <!-- header content -->
         <div class="header">
+            <img src="images/pfp.jpg" class="pfp" alt="">
             <h1 class="italics">Making design feel like music...</h1>
             <p>I'm Jason Karau, an associate graduated web designer, and UX/UI designer, residing in the MN Minneapolis area. My goal is making the internet look and function like how an individual interprets musical sound. Your experience should be calming yet rewarding. Want to make that happen?</p>
-            <a><button>See my work</button></a>
-            <a><button>About me</button></a>
-            <a><button>Contact</button></a>
+            <a><button class="inline">See my work</button></a>
+            <a href="about.html"><button class="inline">About me</button></a>
+            <a href="#footer"><button class="inline">Contact</button></a>
         </div>
     </section>
 
     <img src="images/splitter-black-top.png" class="splitterBlackTop" alt="splitter-black-top">
-
     <section class="containerOff">
-         
-        <h1>Featured UX Work</h1>
-        <h2>Work Title</h2>
-        <p>Work Description...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ligula porta consectetur nulla accumsan aenean integer. Neque placerat pharetra ultrices nam. Viverra volutpat odio donec luctus ultrices fames orci donec. Enim nec vulputate egestas sit risus non. Sapien amet sit enim fames amet. </p>
-        <img src="images/quello_1.png" class="imgWork" alt="quello mockup">
-        <a><button>View Project</button></a>
-        
-        <h1>Featured UX Work</h1>
-        <h2>Work Title</h2>
-        <p>Work Description...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ligula porta consectetur nulla accumsan aenean integer. Neque placerat pharetra ultrices nam. Viverra volutpat odio donec luctus ultrices fames orci donec. Enim nec vulputate egestas sit risus non. Sapien amet sit enim fames amet. </p>
-        <img src="images/quello_1.png" class="imgWork" alt="quello mockup">
-        <a><button>View Project</button></a>
+        <h1 class="workTitle">Featured UX Work</h1>
+        <div class="workGrid">
+            <div class="card">
+                <h2>Work Title</h2>
+                <p>Work Description...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ligula porta consectetur nulla accumsan aenean integer. Neque placerat pharetra ultrices nam. Viverra volutpat odio donec luctus ultrices fames orci donec. Enim nec vulputate egestas sit risus non. Sapien amet sit enim fames amet. </p>
+                <img src="images/quello_1.png" class="imgWork" alt="quello mockup">
+                <a><button>View Project</button></a>
+            </div> 
+            
+            <div class="card">
+                <h2>Work Title</h2>
+                <p>Work Description...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ligula porta consectetur nulla accumsan aenean integer. Neque placerat pharetra ultrices nam. Viverra volutpat odio donec luctus ultrices fames orci donec. Enim nec vulputate egestas sit risus non. Sapien amet sit enim fames amet. </p>
+                <img src="images/quello_1.png" class="imgWork" alt="quello mockup">
+                <a><button>View Project</button></a>
+            </div>
 
-        <h1>Featured UX Work</h1>
-        <h2>Work Title</h2>
-        <p>Work Description...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ligula porta consectetur nulla accumsan aenean integer. Neque placerat pharetra ultrices nam. Viverra volutpat odio donec luctus ultrices fames orci donec. Enim nec vulputate egestas sit risus non. Sapien amet sit enim fames amet. </p>
-        <img src="images/quello_1.png" class="imgWork" alt="quello mockup">
-        <a><button>View Project</button></a>
+            <div class="card">
+                <h2>Work Title</h2>
+                <p>Work Description...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ligula porta consectetur nulla accumsan aenean integer. Neque placerat pharetra ultrices nam. Viverra volutpat odio donec luctus ultrices fames orci donec. Enim nec vulputate egestas sit risus non. Sapien amet sit enim fames amet. </p>
+                <img src="images/quello_1.png" class="imgWork" alt="quello mockup">
+                <a><button>View Project</button></a>
+            </div>
 
+            <div class="card">
+                <h2>Work Title</h2>
+                <p>Work Description...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ligula porta consectetur nulla accumsan aenean integer. Neque placerat pharetra ultrices nam. Viverra volutpat odio donec luctus ultrices fames orci donec. Enim nec vulputate egestas sit risus non. Sapien amet sit enim fames amet. </p>
+                <img src="images/quello_1.png" class="imgWork" alt="quello mockup">
+                <a><button>View Project</button></a>
+            </div>
+        </div>
     </section> 
 
     <img src="images/splitter-orange-top.png" class="splitterOrangeTop" alt="splitter-black-top">
     
     <section class="containerOn">
-        <h1>Web Development</h1>
-        <p>Within the Treehouse Front End Web Development Tech Degree I completed twelve projects showcasing a broad range of skills. I have featured six of them that stuck out the most. </p>
+        <h1 class="workTitle">Web Development</h1>
+        <p class="workTitle">Within the Treehouse Front End Web Development Tech Degree I completed twelve projects showcasing a broad range of skills. I have featured six of them that stuck out the most. </p>
+        
+        <div class="projects">
+            <div class="card">
+                <div class="card-content">
+                <img src="images/wad.png" alt="Web App Dashboard" class="gallery">
+                </div>
+                <div class="subtitle">
+                <p class="subtext">Web App Dashboard</p>
+                    <button class="io">
+                    &#8595;
+                    </button>
+                </div>
+                <div class="subtext-links">
+                    <a class="subtext-a" href="projects/JasonK_WAD_Project_7">Live demo</a>
+                    -
+                    <a class="subtext-a" href="https://github.com/JasonKarau/JasonK_WAD_Project_7">Github</a>
+                </div>
+                <p class="hidden-subtext" style="display: none;">
+                An interactive dashboard design for a
+                web application using svg graphics
+                and JS programming.
+                </p>
+            </div>
 
-        <div class="card">
-            <div class="card-content">
-              <img src="images/wad.png" alt="Web App Dashboard" class="gallery">
+            <div class="card">
+                <div class="card-content">
+                <img src="images/gsa.png" alt="Game Show App" class="gallery">
+                </div>
+                <div class="subtitle">
+                <p class="subtext">Game Show App</p>
+                    <button class="io">
+                    &#8595;
+                    </button>
+                </div>
+                <div class="subtext-links">
+                    <a class="subtext-a" href="projects/JasonK_GSA_Project_6">Live demo</a>
+                    -
+                    <a class="subtext-a" href="https://github.com/JasonKarau/JasonK_GSA_Project_6">Github</a>
+                </div>
+                <p class="hidden-subtext" style="display: none;">
+                Browser version of a word guessing game using JS to generate
+                a random phrase. The player then has to guess by entering different letters
+                into the program. (90's hiphop themed).
+                </p>
             </div>
-            <div class="subtitle">
-              <p class="subtext">Web App Dashboard</p>
-                <button class="io">
-                  &#8595;
-                </button>
+        
+            <div class="card">
+                <div class="card-content">
+                <img src="images/ipg.png" alt="Interactive Photo Gallery" class="gallery">
+                </div>
+                <div class="subtitle">
+                <p class="subtext">Interactive Photo Gallery</p>
+                    <button class="io">
+                    &#8595;
+                    </button>
+                </div>
+                <div class="subtext-links">
+                    <a class="subtext-a" href="projects/JasonK_IPG_Project_5">Live demo</a>
+                    -
+                    <a class="subtext-a" href="https://github.com/JasonKarau/JasonK_IPG_Project_5">Github</a>
+                </div>
+                <p class="hidden-subtext" style="display: none;">
+                An interactive, searchable, gallery of photos made with simple JS to
+                provide efficent functionality.
+                </p>
             </div>
-              <div class="subtext-links">
-                <a class="subtext-a" href="projects/JasonK_WAD_Project_7">Live demo</a>
-                -
-                <a class="subtext-a" href="https://github.com/JasonKarau/JasonK_WAD_Project_7">Github</a>
-              </div>
-            <p class="hidden-subtext" style="display: none;">
-              An interactive dashboard design for a
-              web application using svg graphics
-              and JS programming.
-            </p>
-          </div>
-
-          <div class="card">
-            <div class="card-content">
-              <img src="images/gsa.png" alt="Game Show App" class="gallery">
+        
+            <div class="card">
+                <div class="card-content">
+                <img src="images/wsg.png" alt="Web Style Guide" class="gallery">
+                </div>
+                <div class="subtitle">
+                <p class="subtext">Web Style Guide</p>
+                    <button class="io">
+                    &#8595;
+                    </button>
+                </div>
+                <div class="subtext-links">
+                    <a class="subtext-a" href="projects/JasonK_WSG_Project_4">Live demo</a>
+                    -
+                    <a class="subtext-a" href="https://github.com/JasonKarau/JasonK_WSG_Project_4">Github</a>
+                </div>
+                <p class="hidden-subtext" style="display: none;">
+                A style guide using SASS that can act as a personal and custom bootstrap
+                that you can drop into any project to speed up styling, layout
+                and development in general.
+                </p>
             </div>
-            <div class="subtitle">
-              <p class="subtext">Game Show App</p>
-                <button class="io">
-                  &#8595;
-                </button>
+        
+            <div class="card">
+                <div class="card-content">
+                <img src="images/orf.png" alt="Online Registration Form" class="gallery">
+                </div>
+                <div class="subtitle">
+                <p class="subtext">Online Registration Form</p>
+                    <button class="io">
+                    &#8595;
+                    </button>
+                </div>
+                <div class="subtext-links">
+                    <a class="subtext-a" href="projects/JasonK_ORF_Project_3">Live demo</a>
+                    -
+                    <a class="subtext-a" href="https://github.com/JasonKarau/JasonK_ORF_Project_3">Github</a>
+                </div>
+                <p class="hidden-subtext" style="display: none;">
+                A responsive, mobile-first registration form using a variety of HTML form elements
+                </p>
             </div>
-              <div class="subtext-links">
-                <a class="subtext-a" href="projects/JasonK_GSA_Project_6">Live demo</a>
-                -
-                <a class="subtext-a" href="https://github.com/JasonKarau/JasonK_GSA_Project_6">Github</a>
-              </div>
-            <p class="hidden-subtext" style="display: none;">
-              Browser version of a word guessing game using JS to generate
-              a random phrase. The player then has to guess by entering different letters
-              into the program. (90's hiphop themed).
-            </p>
-          </div>
-      
-          <div class="card">
-            <div class="card-content">
-              <img src="images/ipg.png" alt="Interactive Photo Gallery" class="gallery">
+        
+            <div class="card">
+                <div class="card-content">
+                <img src="images/mfrl.png" alt="Mobile Responsive Layout" class="gallery">
+                </div>
+                <div class="subtitle">
+                <p class="subtext">Mobile Responsive Layout</p>
+                    <button class="io">
+                    &#8595;
+                    </button>
+                </div>
+                <div class="subtext-links fix">
+                    <a class="subtext-a" href="projects/Treehouse-mfrl-project-2">Live demo</a>
+                    -
+                    <a class="subtext-a" href="https://github.com/JasonKarau/Treehouse-mfrl-project-2">Github</a>
+                </div>
+                <p class="hidden-subtext fix" style="display: none;">
+                A mobile-first, mock portfolio web page with a layout
+                that adjusts to fit mobile phones, tablets, and desktop displays.
+                </p>
             </div>
-            <div class="subtitle">
-              <p class="subtext">Interactive Photo Gallery</p>
-                <button class="io">
-                  &#8595;
-                </button>
-            </div>
-              <div class="subtext-links">
-                <a class="subtext-a" href="projects/JasonK_IPG_Project_5">Live demo</a>
-                -
-                <a class="subtext-a" href="https://github.com/JasonKarau/JasonK_IPG_Project_5">Github</a>
-              </div>
-            <p class="hidden-subtext" style="display: none;">
-              An interactive, searchable, gallery of photos made with simple JS to
-              provide efficent functionality.
-            </p>
-          </div>
-      
-          <div class="card">
-            <div class="card-content">
-              <img src="images/wsg.png" alt="Web Style Guide" class="gallery">
-            </div>
-            <div class="subtitle">
-              <p class="subtext">Web Style Guide</p>
-                <button class="io">
-                  &#8595;
-                </button>
-            </div>
-              <div class="subtext-links">
-                <a class="subtext-a" href="projects/JasonK_WSG_Project_4">Live demo</a>
-                -
-                <a class="subtext-a" href="https://github.com/JasonKarau/JasonK_WSG_Project_4">Github</a>
-              </div>
-            <p class="hidden-subtext" style="display: none;">
-              A style guide using SASS that can act as a personal and custom bootstrap
-              that you can drop into any project to speed up styling, layout
-              and development in general.
-            </p>
-          </div>
-      
-          <div class="card">
-            <div class="card-content">
-              <img src="images/orf.png" alt="Online Registration Form" class="gallery">
-            </div>
-            <div class="subtitle">
-              <p class="subtext">Online Registration Form</p>
-                <button class="io">
-                  &#8595;
-                </button>
-            </div>
-              <div class="subtext-links">
-                <a class="subtext-a" href="projects/JasonK_ORF_Project_3">Live demo</a>
-                -
-                <a class="subtext-a" href="https://github.com/JasonKarau/JasonK_ORF_Project_3">Github</a>
-              </div>
-            <p class="hidden-subtext" style="display: none;">
-              A responsive, mobile-first registration form using a variety of HTML form elements
-            </p>
-          </div>
-      
-          <div class="card">
-            <div class="card-content">
-              <img src="images/mfrl.png" alt="Mobile Responsive Layout" class="gallery">
-            </div>
-            <div class="subtitle">
-              <p class="subtext">Mobile Responsive Layout</p>
-                <button class="io">
-                  &#8595;
-                </button>
-            </div>
-              <div class="subtext-links fix">
-                <a class="subtext-a" href="projects/Treehouse-mfrl-project-2">Live demo</a>
-                -
-                <a class="subtext-a" href="https://github.com/JasonKarau/Treehouse-mfrl-project-2">Github</a>
-              </div>
-            <p class="hidden-subtext fix" style="display: none;">
-              A mobile-first, mock portfolio web page with a layout
-              that adjusts to fit mobile phones, tablets, and desktop displays.
-            </p>
-          </div>
+        </div>
     </section>
 
     <img src="images/splitter-orange-bottom.png" class="splitterOrangeBottom" alt="splitter-black-top">
 
     <section class="container">
-        <h1>Some Other Things I Do...</h1>
+        <h1 class="workTitle">Some Other Things I Do...</h1>
+        <div class="button-grid">
+            <a><button class="button-wide">Music</button></a>
+            <a><button class="button-wide">Audio Engineering</button></a>
+            <a><button class="button-wide">Graphics</button></a>
+        </div>
     </section>
+
+    <div class="container">
+        <h1 class="footcenter">Thanks</h1>
+          <p class="footcenter">
+            Find what your looking for? Get in touch!
+          </p>
+      </div>
+
+    <footer class="page-footer font-small" id="footer">
+        <a class="mailto" id="contact" href="mailto:karaudesign@outlook.com">
+          <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_ilujvy3v.json" background="transparent"  speed="1"  style= "height: 100px; width: 100px; "  loop  autoplay></lottie-player>
+        </a>
+        <!-- Copyright -->
+        <div class="footer-copyright py-3">© 2020 Copyright:
+          <a class="footer-a" href="#"> karaudesign.com</a>
+        </div>
+        <!-- Copyright -->
+    
+      </footer>
+    
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>
