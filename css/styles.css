@@ -61,6 +61,7 @@ p {
 
 .navbar-links li:hover {
     background-color: #FFAA00;
+    transition: 0.1s ease-in-out;
 }
 
 .navbar-links li a:hover{
@@ -106,7 +107,7 @@ p {
 
 .containerOn {
     margin: 0 auto;
-    padding: 0px 10px 0px 10px;
+    padding: 0px 10px 20px 10px;
     background-color: #FFAA00;
     color: black;
 }
@@ -146,11 +147,14 @@ button:hover {
     font-size: 16px;
     transition: 0.1s ease-in-out;
     font-weight: 700;
+    border: 5px solid transparent;
 }
 
 .buttonOffColor:hover {
     background-color: white;
     color: black;
+    outline: 0px solid transparent;
+    border: 5px solid #E09500;
     cursor: pointer;
 }
 
@@ -283,6 +287,7 @@ button:hover {
 
 .pfp {
     display: none;
+    border-radius: 10px;
 }
 
 .card {
