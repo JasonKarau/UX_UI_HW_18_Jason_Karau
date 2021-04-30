@@ -5,6 +5,7 @@
     scroll-behavior: smooth;
   }
 
+  @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
 /* global css */
 body {
     margin: 0;
@@ -75,7 +76,7 @@ p {
 .navbar-links li a {
     text-decoration: none;
     color: white;
-    padding: 22px 18px 22px 18px;
+    padding: 22px 18px 20px 18px;
     display: block;
     font-size: 20px;
 }
@@ -300,7 +301,7 @@ button:hover {
 }
 
 .card {
-    margin-bottom: 40px;
+    margin-top: 40px;
 }
 
 .workCard {
@@ -343,6 +344,10 @@ a {
 
 .marginDel {
     margin: 0;
+}
+
+iframe {
+    display: block;
 }
 
 body { -webkit-animation:fadein 0.5s; animation:fadein 0.5s }
