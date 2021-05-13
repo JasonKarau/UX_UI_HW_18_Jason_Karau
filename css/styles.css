@@ -670,6 +670,16 @@ blockquote {
         grid-column-gap: 3em;
     }
 
+    .logoGridWork {
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr 3fr 3fr 3fr 3fr 3fr 3fr 6fr;
+        grid-auto-rows: auto;
+        grid-column-gap: 1em;
+        justify-content: center;
+        row-gap: 3em;
+        margin: 0px 0px 0px 0px;
+    }
+
     .logoGrid {
         display: inline-block;
         margin-top: 40px;
@@ -685,6 +695,16 @@ blockquote {
         float: right;
         width: 25%;
         margin: 40px 100px 40px 200px;
+    }
+
+    .myImages {
+        height: auto;
+        width: 50%;
+    }
+
+    .caseImg {
+        width: 30%;
+        height: 30%;
     }
 }
 
