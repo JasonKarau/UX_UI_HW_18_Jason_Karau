@@ -27,8 +27,8 @@
         </a>
         <div class="navbar-links">
             <ul>
-                <li><a href="#">My Work</a></li>
-                <li><a href="#">Resume</a></li>
+                <li><a href="work.html">My Work</a></li>
+                <li><a href="images/JasonK_UX_Resume.pdf">Resume</a></li>
                 <li><a href="#footer">Contact</a></li>
             </ul>
         </div>
@@ -41,7 +41,7 @@
             <img src="images/pfp.jpg" class="pfp" alt="">
             <h1 class="italics">Making design feel like music...</h1>
             <p>I'm Jason Karau, an associate graduated web designer, and UX/UI designer, residing in the MN Minneapolis area. My goal is making the internet look and function like how an individual interprets musical sound. Your experience should be calming yet rewarding. Want to make that happen?</p>
-            <a><button class="inline">See my work</button></a>
+            <a href="work.html"><button class="inline">See my work</button></a>
             <a href="about.html"><button class="inline">About me</button></a>
             <a href="#footer"><button class="inline">Contact</button></a>
             <!-- <p style="margin-top: 0;">My music!</p>
@@ -60,7 +60,7 @@
                 <div>
                     <h2>Quello App: Traveling Safe During a Pandemic</h2>
                     <p>During the peak of the pandemic, people still seemed to be traveling frequently across the U.S. Most likely, there are many people who have health concerns and want to able to feel safe during travel. </p>
-                    <a href="quello.html"><button class="bottom">View Project</button></a>
+                    <button onclick="location.href='quello.html'" type="button" class="bottom">View Project</button>
                 </div>
             </div> 
             
@@ -74,7 +74,7 @@
                     <br><br>
                     Take a look at what goes into making an existing website <i><u>better</u></i>   
                     </p>
-                    <a><button>View Project</button></a>
+                    <button>View Project</button>
                 </div>
             </div>
 
@@ -85,7 +85,7 @@
                 <div>
                     <h2>Offset App: Creating a Sustainable Lifestyle</h2>
                     <p>Creating habits can be good or bad... Depending on what it is. When it comes to creating green habits, people either stay vigilant or totally forget them. "Offset" aims to make sure users remember to stay green and gives them rewards for doing everyday eco-friendly tasks.</p>
-                    <a><button>View Project</button></a>
+                    <button onclick="location.href='offset.html'" type="button">View Project</button>
                 </div>
             </div>
 
@@ -96,7 +96,7 @@
                 <div>
                     <h2>Non-Profit Website Redesign</h2>
                     <p>Dive into the thought process behind a redesign of "Ten Thousand Books". This Non-Profit organization was struggling online, getting little to no interactions through their website. A reorganization of content was much needed.</p>
-                    <a><button>View Project</button></a>
+                    <button>View Project</button>
                 </div>
             </div>
         </div>
@@ -244,9 +244,9 @@
     <section class="container">
         <h1 class="workTitle">Some Other Things I Do...</h1>
         <div class="button-grid">
-            <a><button class="button-wide">Music</button></a>
-            <a><button class="button-wide">Audio Engineering</button></a>
-            <a><button class="button-wide">Graphics</button></a>
+            <button onclick="location.href='work.html#music'" type="button" class="button-wide">Music</button>
+            <button onclick="location.href='work.html#graphics'" type="button" class="button-wide">Graphics</button>
+            <button onclick="location.href='work.html#video'" type="button" class="button-wide">Video</button>
         </div>
     </section>
 
@@ -280,6 +280,7 @@
         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>

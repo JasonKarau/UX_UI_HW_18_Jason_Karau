@@ -2,7 +2,6 @@
 * {
     box-sizing: border-box;
     font-family: 'Nunito Sans', sans-serif;
-    scroll-behavior: smooth;
   }
   
 /* global css */
@@ -57,6 +56,7 @@ p {
     margin: 0;
     padding: 0;
     display: flex;
+    scroll-behavior: smooth;
 }
 
 .navbar-links li {
@@ -380,6 +380,19 @@ blockquote {
     width: 100%;
 }
 
+.spotify {
+    margin: auto;
+    width: 250px;
+    margin-bottom: 80px;
+  }
+
+  .offImg {
+    height: auto;
+    width: 40%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 /* modal */
 
 #myImg {
@@ -508,6 +521,14 @@ blockquote {
         padding: 0px 0px 0px 0px;
     }
 
+    .spotify {
+        width: 400px;
+    }
+
+    .offImg {
+        height: auto;
+        width: 30%;
+    }
 }
 
 @media (max-width: 550px) {
@@ -653,6 +674,15 @@ blockquote {
         height: auto;
         width: 100%;
     }
+
+    .spotify {
+        width: 600px;
+      }
+
+      .offImg {
+        height: auto;
+        width: 30%;
+    }
 }
 
 @media (min-width: 1024px)  {
@@ -706,6 +736,11 @@ blockquote {
         width: 30%;
         height: 30%;
     }
+
+    .offImg {
+        height: auto;
+        width: 15%;
+    }
 }
 
 @media (min-width: 1440px)  {
@@ -730,6 +765,10 @@ blockquote {
         grid-column-gap: 3em;
         padding: 0px 40px 0px 40px;
     }
+
+    .spotify {
+        width: 800px;
+      }
 }
 
 @media (min-width: 1800px)  {

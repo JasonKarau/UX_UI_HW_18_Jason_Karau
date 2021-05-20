@@ -13,11 +13,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/btt.css">
     <link rel="stylesheet" href="css/case.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+
+    <a href="#" id="back-to-top" class="back-to-top" style="display: inline;">&#8593;</a>
     <!-- navigation -->
     <nav class="navbar">
         <div class="brand-title"><img src="images/logo@4xcopy.png" class="logo" alt="jasons personal logo"><a href="index.html" class="home">Jason Karau</a></div>
@@ -28,9 +31,9 @@
         </a>
         <div class="navbar-links">
             <ul>
-                <li><a href="#">Resume</a></li>
-                <li><a href="#footer">Contact</a></li>
-                <li><a href="#">My Work</a></li>
+                <li style="margin-right: 0px;"><a href="work.html">My Work</a></li>
+                <li style="margin-right: 0px;"><a href="images/JasonK_UX_Resume.pdf">Resume</a></li>
+                <li style="margin-right: 0px;"><a href="#footer">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -305,8 +308,7 @@
                 <li>Automatically updates whenever your device is online ensuring that you’re the most up-to-date individual with health news and information. Has direct links to social media, text and email letting you immediately share the most interesting articles with friends and family.
                 </li>
             </ul>
-
-            <a href="https://drive.google.com/file/d/1udf77I9hTbYDUvJ__cDd0S_Kcx-cbKYv/view?usp=sharing"><button class="inline">See Full Analysis</button></a>
+            <button onclick=" window.open('https://drive.google.com/file/d/1udf77I9hTbYDUvJ__cDd0S_Kcx-cbKYv/view?usp=sharing','_blank')" type="button">See Full Analysis</button>
 
             <h2 style="margin-top: 20px;">User Flow</h2>
 
@@ -316,8 +318,7 @@
                 <img class="modal-content" id="img01">
                 <div id="caption"></div>
             </div>
-
-            <a href="https://miro.com/app/board/o9J_lZ7rzJw=/"><button>View Miro Example</button></a>
+            <button onclick=" window.open('https://miro.com/app/board/o9J_lZ7rzJw=/','_blank')" type="button">View Miro Example</button>
             
             <h2 style="margin-top: 20px;">Whiteboard Wireframes</h2>
             <p>Going through the process of creating a drawn prototype for the first time was really interesting. I think I gave myself a good start at getting to a lofi prototype.
@@ -341,14 +342,15 @@
 
             </p>
 
-            <a href="https://jasonkarau517189.invisionapp.com/overview/Homework-3-Jason-Karau-Sketch-prototype-ckjt49ys4003n0154go8f779b/screens"><button>View invision Example</button></a>
         
             <h2 style="margin-top: 20px;">Lo-fi Prototype</h2>
             <p>
                 From the sketches, I realized a lot had to be added during the processes to get the message across. 
             </p>
 
-            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="700" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FO9F0ZlFWEm3aYRKfL7VRdQ%2FQuello-Sign-in-Base-Prototype%3Fpage-id%3D0%253A1%26node-id%3D1%253A2%26viewport%3D221%252C202%252C0.08476234972476959%26scaling%3Dscale-down" allowfullscreen></iframe>
+            <img src="images/logos/figma.png" alt="Figma" style="width: auto; height: 72px;">
+            <button onclick=" window.open('https://www.figma.com/proto/O9F0ZlFWEm3aYRKfL7VRdQ/Quello-Sign-in-Base-Prototype?scaling=scale-down&node-id=1%3A2','_blank')" type="button">Figma Walkthrough</button>
+
             <p>
                 While doing some early user tests I was able to gain insight that instead of showing my user test with a pre selected path, 
                 It would be more useful to have a centralized home page where the user can go back to a previous state at any time. 
@@ -504,11 +506,14 @@
                 See the changes added in the final prototype here
             </h2>
 
-            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="700" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FcZWHg80tR2bePFLHfifEdE%2FQuello-iOS-Prototype%3Fpage-id%3D0%253A1%26node-id%3D1%253A9910%26viewport%3D1451%252C1343%252C0.14939644932746887%26scaling%3Dscale-down" allowfullscreen></iframe>
+            <img src="images/logos/figma.png" alt="Figma" style="width: auto; height: 72px;">
+            <button onclick=" window.open('https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FcZWHg80tR2bePFLHfifEdE%2FQuello-iOS-Prototype%3Fpage-id%3D0%253A1%26node-id%3D1%253A9910%26viewport%3D1451%252C1343%252C0.14939644932746887%26scaling%3Dscale-down','_blank')" type="button">Figma Walkthrough</button>
+
+       
         </div>
     </section>
 
-    <img src="images/splitter-black-top.png" class="splitterBlackTop" alt="splitter-black-top" style="transform: scale(-1, -1); background-color: #FFAA00;">
+    <img src="images/splitter-orange-top.png" class="splitterBlackTop" alt="splitter-black-top" style="background-color:black;">
 
     <section class="containerOn">
         <div class="content header" style="margin-top: 0px;">
@@ -571,6 +576,8 @@
       </footer>
     
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/btt.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>
