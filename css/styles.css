@@ -72,6 +72,10 @@ p {
     color: black;
 }
 
+/* .navbar-links li a:active{
+    color: red;
+} */
+
 .navbar-links li a {
     text-decoration: none;
     color: white;
@@ -393,6 +397,14 @@ blockquote {
     padding-bottom: 20px;
 }
 
+.nasaImg {
+    height: auto;
+    width: 100%;
+    border: 2px solid white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 /* modal */
 
 #myImg {
@@ -426,6 +438,12 @@ blockquote {
     /* Fallback color */
     background-color: rgba(0, 0, 0, 0.9);
     /* Black w/ opacity */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  .modal::-webkit-scrollbar {
+    display: none;
   }
   
   .modal-content {
@@ -528,6 +546,11 @@ blockquote {
     .offImg {
         height: auto;
         width: 30%;
+    }
+
+    .nasaImg {
+        height: auto;
+        width: 100%;
     }
 }
 
@@ -683,6 +706,11 @@ blockquote {
         height: auto;
         width: 30%;
     }
+
+    .nasaImg {
+        height: auto;
+        width: 30%;
+    }
 }
 
 @media (min-width: 1024px)  {
@@ -740,6 +768,11 @@ blockquote {
     .offImg {
         height: auto;
         width: 15%;
+    }
+
+    .nasaImg {
+        height: auto;
+        width: 50%;
     }
 }
 

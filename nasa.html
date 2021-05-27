@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karau Design</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/btt.css">
+    <link rel="stylesheet" href="css/case.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <a href="#" id="back-to-top" class="back-to-top" style="display: inline;">&#8593;</a>
+    <!-- navigation -->
+    <nav class="navbar">
+        <div class="brand-title"><img src="images/logo@4xcopy.png" class="logo" alt="jasons personal logo"><a href="index.html" class="home">Jason Karau</a></div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li style="margin-right: 0px;"><a href="work.html">My Work</a></li>
+                <li style="margin-right: 0px;"><a href="images/JasonK_UX_Resume.pdf">Resume</a></li>
+                <li style="margin-right: 0px;"><a href="#footer">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="container">
+        <!-- header content -->
+        <div class="header">
+            <h1 class="italics fontOveride">NASA Homepage Navigation Redesign - Nothing is Ever Perfect</h1>
+            <p>UX/UI Case Study</p>
+            <img src="images/nasaimg/1.png" class="caseImg" style=" margin-bottom: 20px; " alt="">
+
+            <h2> Overview </h2>
+            <p>
+                NASA’s website was observed by our team to have an slight organizational problem. 
+                Our task at hand was to keep some of the NASA aspects and components from the existing site while building a new and more organized full screen navigation.
+                There were several opportunities presented to us upon observation. For example, while the site had an acceptable dual navigation that matched titled content, nothing was sectioned off and instead,
+                thrown into a grid style bulletin system. As a beginner UX/UI desinger, a redesign of NASA.gov was incredibly challenging. 
+                Making functionality additions seemed like it was was more of a nuisance for the user and instead taking away or simplifying the process made it easier to navigate the content.
+            </p>
+
+            <button onclick=" window.open('https://www.figma.com/proto/7VgLFdyVuCF8DUCMU4WzDN/Jason-Karau-Homework-11-12?page-id=22%3A49&node-id=23%3A0&viewport=747%2C263%2C0.12155187875032425&scaling=scale-down','_blank')" type="button" style="margin-bottom: 20px;">Figma Desktop Prototype</button>
+            <button onclick=" window.open('https://www.figma.com/proto/7VgLFdyVuCF8DUCMU4WzDN/Jason-Karau-Homework-11-12?page-id=55%3A228&node-id=55%3A283&viewport=604%2C156%2C0.1489541232585907&scaling=scale-down','_blank')" type="button" style="margin-bottom: 20px;">Figma Mobile Prototype</button>
+
+            <div>
+                <h2>Tools Used</h2>
+                <div class="logoGridWork">
+                    <img src="images/logos/figma.png" alt="Figma">
+                    <img src="images/logos/miro.png" alt="Miro">
+                    <img src="images/logos/illustrator.png" alt="illustrator">
+                    <img src="images/logos/photoshop.png" alt="photoshop">
+                </div> 
+            </div>
+        </div>
+
+
+        <div class="content header">
+            <hr>
+            <h1>Phase 1: Observations and Heuristics</h1>
+            <p>
+                Before conducting a heuristic analysis of NASA's current website, we needed to brainstorm a short persona that could tie in to our potential user base
+            </p>
+
+            <h2 style="margin-top: 20px;">Proto Persona</h2>
+            <p><b>Name:</b> Hank Parker</p>
+            <p><b>Behavioral Demographics:</b></p>
+            <ul>
+                <li>Lives in Tampa Bay, Florida</li>
+                <li>Age: 26</li>
+                <li>Studying Astrophysics and Aeronautical Engineering</li>
+                <li>Barista (Just working this job to get by before graduating)</li>
+            </ul>
+
+            <p><b>Goals and Needs On NASA's site</b></p>
+            <ul>
+                <li>Wants to be up to date on all current NASA news</li>
+                <li>Wants a space news source that is trustworthy</li>
+                <li>While studying Astrophysics and Aeronautical Engineering, Hank would like a place to share his thoughts with other scholars in the same field.</li>
+            </ul>
+
+            <p><b>Pain Points and Potential Solutions</b></p>
+            <ul>
+                <li>Unsure if current space news is accurate and true</li>
+                <li>Can't find a reliable chat / forum regarding space & NASA news</li>
+            </ul>
+
+            <h2 style="margin-top: 20px;">Possible User Path</h2>
+            <p>Hank is currently studying Astrophysics and Aeronautical Engineering at the University of Tampa. 
+                His current studies consist of the science behind leaving and re-entering earth's atmosphere. 
+                During his search on the internet, he figures NASA will probably have some answers or articles to further enhance his knowledge on the subject. 
+                He ends up being confused where to look within NASA's site. 
+                Getting to the desired location on NASA’s website may have been troublesome but Hank finally made it to the “flight” topic section. 
+                It has several articles about Aeronautical Engineering but they were scattered about with no clear timestamps, which was really irritating.
+            </p>
+
+            <h2 style="margin-top: 20px;">Interview Takeaways</h2>
+            <p>
+                To see what regular people thought about the current website we had a select few navigate through it following 5 tasks. 
+                The tasks were created to match what our persona's possible navigation thought processes would be.  
+            </p>
+
+            <ol>
+                <li>Navigate to all Missions</li>
+                <li>Find images within the fight category</li>
+                <li>Find NASA's social media while navigating through the site</li>
+                <li>Return to NASA's homepage from any current screen</li>
+                <li>Use the search function to find or apply for an internship</li>
+            </ol>
+
+            <p>
+                While the users comepleted these simple tasks with many issues in mind, they instead went off track and pointed out other problems as well. 
+                It helped to just let them talk and express themselves more than following a strict path. 
+                <br><br>
+                Some examples :
+            </p>
+
+            <ul>
+                <li>"Why is there a sub navigation? That could be in one thing itself. It draws more attention from the main navigation almost."</li>
+                <li>"Viewing topic pages can get messy. I can click, click, click, move to new pages and such but I cant seem to find my way back within the page"</li>
+                <li>"I assumed a way to apply for a career at NASA would be at the bottom of the page... And it's not there?"</li>
+                <li>"If I wanted to listen to podcasts from NASA I'd have no idea where to go"</li>
+                <li>"None of the articles are sorted. They only appear to have a topic attached to them but what is most recent?"</li>
+            </ul>
+        </div>
+
+        <div class="content header">
+            <h2 style="margin-top: 20px;">Heuristic Analysis</h2>
+            <p>
+                Lets look at the current features NASA presents on their webpage and attack problems with a user perspective.     
+            </p>
+
+            <img class="myImages" id="myImg" src="images/nasaimg/1-1.png" alt="" height="200">
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+
+                <p><b>1.1</b> Main Nav
+                    <br>
+                    Well aligned, but order of content seems a bit out of place and hard to follow. Where would Hank go to accomplish his goals here?
+                
+                </p>
+
+                <p><b>2.1</b> Sub Nav
+                    <br>
+                    Sub nav has no label on what the items are. So at first look, users have no idea what the content is. 
+                    This could be organized into a single tab called "topics" or another name within that matter.
+                    
+                </p>
+
+                <img class="myImages" id="myImg" src="images/nasaimg/1-2.png" alt="" style="width: 200px;">
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+
+                <p><b>1.2</b> Drop Down
+                    <br>
+                    A lot going on. Would be better if content is organized within drop down. Sorted by "Featured" Missions and "Explore" which features All Missons.
+                    
+                </p>
+
+                <img class="myImages" id="myImg" src="images/nasaimg/2-2.png" alt="">
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+
+                <p><b>2.2</b> Topic Sub Nav
+                    <br>
+                    "Humans in Space" in navigation is kind of redundant. Instead we could use it for an H1 Heading. 
+                    Humans in space is also listed twice which seems very odd. A bigger title to let the user know what page they're on is clear focus. 
+                    The continuation of clicking on a topic needs to be more clear and concise. It feels like a user could get lost on where they are in the site
+                    
+                </p>
+                
+                <img class="myImages" id="myImg" src="images/nasaimg/3-1.png" alt="" style="width: 200px;">
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+
+                <p><b>3.1</b> Sidebar
+                    <br>
+                    Sidebar is very busy, with unlabeled organization. Links to social media should be moved to footer allowing access to follow on all pages.
+                    
+                </p>
+
+                <img class="myImages" id="myImg" src="images/nasaimg/4.png" alt="">
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+
+                <p><b>4.1</b> Footer
+                    <br>
+                    Footer should include social medias as well as a Career page.
+                    
+                </p>
+        </div>
+
+        <div class="content header">
+            <hr>
+            <h1>Phase 2: Prototyping</h1>
+            <h2 style="margin-top: 20px;">Site Map</h2>
+            <p>
+                NASA's Navigation structure didn't need a complete overhaul. 
+                Only a few things needed compressing or changing. 
+                Examples being the sub navigation on the front page condensed into a tab called "topics", condensing all media related fields into a tab called "media", and adding a careers link in the footer of the site.
+            </p>
+            <button onclick=" window.open('https://miro.com/app/board/o9J_lOobn6Q=/','_blank')" type="button" style="margin-bottom: 20px;">Miro Site Map</button>
+            
+            <h2 style="margin-top: 20px;">UI Style Tile</h2>
+            <img class="myImages" id="myImg" src="images/nasaimg/styleTile.png" alt="" style="border: 5px solid black;">
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+
+            <h2 style="margin-top: 20px;">Component Creation</h2>
+
+            <img class="myImages" id="myImg" src="images/nasaimg/c1.png" alt="">
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+
+                <img class="myImages" id="myImg" src="images/nasaimg/c2.png" alt="" >
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+
+                <img class="myImages" id="myImg" src="images/nasaimg/c3.png" alt="" >
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+
+                <img class="myImages" id="myImg" src="images/nasaimg/c4.png" alt="" >
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+
+                <img class="myImages" id="myImg" src="images/nasaimg/c5.png" alt="" >
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+
+                <img class="myImages" id="myImg" src="images/nasaimg/c6.png" alt="" >
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+
+            <h2 style="margin-top: 20px;">Early Design Decisions</h2>
+            <p>A couple of things I wanted to focus on in the design:</p>
+            <ol>
+                <li>
+                    A Modular setup for articles on landing page. Opens up more space. (option is to instead fill the grid from end to end, which was later used due to requests during user testing).
+                </li>
+                <li>
+                    Later content and sections will be modular by 1x1, 1x2, 2x1, 2x2 squares. Each article will be clickable and lead to the same layout and setup for the page selected
+                </li>
+                <li>
+                    Navigation goes from left to right. It was hard to click through due to the way I prototyped it. 
+                    Although, during 5 second testing with a few users, they easily could find what they were looking for. 
+                    It was just hard for them to click out of the “folder like” navigation due to figma limitations.
+                </li>
+            </ol>
+            <button onclick=" window.open('https://www.figma.com/proto/BnZjLgq0ojXHGmLDGHJqzd/Homework-10-NASA-UI-Nav-Design?page-id=0%3A1&node-id=1%3A2&viewport=432%2C639%2C0.1718239039182663&scaling=scale-down','_blank')" type="button" style="margin-bottom: 20px;">Navigation Prototype (First Run)</button>
+            <button onclick=" window.open('https://www.figma.com/proto/gNDFcIEDHPdgfjy9Krxk6T/Homework-10-part-2?node-id=61%3A2125&viewport=289%2C485%2C0.25258874893188477&scaling=scale-down','_blank')" type="button" style="margin-bottom: 20px;">Navigation Mobile Prototype (Second Run)</button>
+            <button onclick=" window.open('https://www.figma.com/proto/gNDFcIEDHPdgfjy9Krxk6T/Homework-10-part-2?node-id=61%3A1388&viewport=514%2C442%2C0.13895820081233978&scaling=scale-down','_blank')" type="button" style="margin-bottom: 20px;">Navigation Tablet Prototype (Second Run)</button>
+        </div>      
+    </section>
+
+    <img src="images/splitter-black-top.png" class="splitterBlackTop" alt="splitter-black-top">
+
+    <section class="containerOff">
+        <div class="content header" style="margin-top: 0px;">
+            <h1>Phase 3: Hi-Fi Wireframing</h1>
+            <button onclick=" window.open('https://www.figma.com/proto/7VgLFdyVuCF8DUCMU4WzDN/Jason-Karau-Homework-11-12?page-id=22%3A49&node-id=23%3A0&viewport=747%2C263%2C0.12155187875032425&scaling=scale-down','_blank')" type="button" style="margin-bottom: 20px;">Figma Desktop Prototype</button>
+            <button onclick=" window.open('https://www.figma.com/proto/7VgLFdyVuCF8DUCMU4WzDN/Jason-Karau-Homework-11-12?page-id=55%3A228&node-id=55%3A283&viewport=604%2C156%2C0.1489541232585907&scaling=scale-down','_blank')" type="button" style="margin-bottom: 20px;">Figma Mobile Prototype</button>
+            <div class="caseGrid">
+                <img src="images/nasaimg/desktop/1.png" class="nasaImg" alt="">
+                <img src="images/nasaimg/desktop/2.png" class="nasaImg" alt="">
+                <img src="images/nasaimg/desktop/3.png" class="nasaImg" alt="">
+                <img src="images/nasaimg/desktop/4.png" class="nasaImg" alt="">
+                <img src="images/nasaimg/desktop/5.png" class="nasaImg" alt="">
+                <img src="images/nasaimg/desktop/6.png" class="nasaImg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <img src="images/splitter-orange-top.png" class="splitterBlackTop" alt="splitter-black-top" style="background-color:black;">
+
+    <section class="containerOn">
+        <div class="content header" style="margin-top: 0px;">
+            <h1>Phase 4: Key Takeaways from User Tests and Reflection</h1>
+            
+            <p>
+                The same users I tested for the current website I tested for my own. I got a lot of great feedback but some pointers were mentioned as well.
+            </p>
+
+            <ol class="oList">
+                <li>
+                    Users had a hard time locating dimmed icons 
+                </li>
+                <ul>
+                    <li>
+                        Solution: keep them dimmed but instead on hover turn them to white.
+                    </li>
+                </ul>
+
+                <li>
+                    Overlays are interfering with fixed header 
+                </li>
+                <ul>
+                    <li>
+                        Solution: Explain to the developer on how this should work without interference.
+                    </li>
+                </ul>
+
+                <li>
+                    Introduce a “back to top” button in the footer. There’s a lot of content on the homepage and users felt like it was long to scroll back up.
+                </li>
+
+                <li>
+                    Introduce a hover state for the article cards.
+                </li>
+
+                <li>
+                    On the navigation, the tertiary parts of the nav should be aligned with the selected secondary navigation.
+                </li>
+
+            </ol>
+
+            <h2 style="margin-top: 20px;">Overall Takeaways</h2>
+            <p>
+                While NASA’s existing site already seemed very well thought out for its intended purpose, 
+                we knew that it needed something to organize the home page and it’s navigation in a better method. 
+                By sectioning off it’s content, a new user could find articles from just the homepage within their desired topic.
+                And the navigation doesn’t sit so bland. We were able to put the existing sub navigation into a full page navigation. 
+                However, I feel like not having contact with NASA really puts us at disadvantage. 
+                It seems like they have a specific goal they want to accomplish with their website, 
+                and would be hesitant to change it. From an outside perspective though we were able to accomplish the fixes for problems we thought were important. 
+                The same went for users as well.
+
+                <br><br>
+
+                I think there were a few things I missed out on that I can fix in the future. 
+                For example, Better following the UI style guide and focusing on establishing a clear responsive design. Or, Making a tablet design as well.
+            </p>
+        </div>
+    </section>
+
+    <img src="images/splitter-orange-bottom.png" class="splitterOrangeBottom" alt="splitter-black-top">
+
+    <div class="container" style="margin-left: 10px; margin-right: 10px;">
+        <h1 class="footcenter">Thanks</h1>
+          <p class="footcenter" style="margin-right: 0px;">
+            Find what your looking for? Get in touch!
+          </p>
+      </div>
+
+    <footer class="page-footer font-small" id="footer">
+        <a class="mailto" id="contact" href="mailto:karaudesign@outlook.com">
+          <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_ilujvy3v.json" background="transparent"  speed="1"  style= "height: 100px; width: 100px; "  loop  autoplay></lottie-player>
+        </a>
+        <!-- Copyright -->
+        <div class="footer-copyright py-3">© 2020 Copyright:
+          <a class="footer-a" href="#"> karaudesign.com</a>
+        </div>
+        <!-- Copyright -->
+    
+      </footer>
+    
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/btt.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
