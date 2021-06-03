@@ -756,7 +756,7 @@ blockquote {
     }
 
     .myImages {
-        height: auto;
+        height: 50%;
         width: 50%;
     }
 
@@ -766,12 +766,12 @@ blockquote {
     }
 
     .offImg {
-        height: auto;
+        height: 15%;
         width: 15%;
     }
 
     .nasaImg {
-        height: auto;
+        height: 50%;
         width: 50%;
     }
 }

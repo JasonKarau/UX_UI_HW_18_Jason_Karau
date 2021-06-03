@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karau Design</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/btt.css">
+    <link rel="stylesheet" href="css/case.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <a href="#" id="back-to-top" class="back-to-top" style="display: inline;">&#8593;</a>
+    <!-- navigation -->
+    <nav class="navbar">
+        <div class="brand-title"><img src="images/logo@4xcopy.png" class="logo" alt="jasons personal logo"><a href="index.html" class="home">Jason Karau</a></div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li style="margin-right: 0px;"><a href="work.html">My Work</a></li>
+                <li style="margin-right: 0px;"><a href="images/JasonK_UX_Resume.pdf">Resume</a></li>
+                <li style="margin-right: 0px;"><a href="#footer">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="container">
+        <!-- header content -->
+        <div class="header">
+            <h1 class="italics fontOveride">Twin Cities Musicians Union - An Informational With a TON Of Potential</h1>
+            <p>UX/UI Case Study</p>
+            <img src="images/tcmuDesktop.png" class="caseImg" alt="">
+
+            <h2> Overview </h2>
+            <p>
+                TCMU Is a local Muscians Union that has been serving Twin Cities Musicians since 1987.
+                They Advocate for for musicians’ rights in the workplace. Whether it is a nightclub, a symphony stage, a recording studio, or on tour.
+                But what about this site is missing? What does it try to accomplish, but doesn't quite get there? 
+                See how our group redesigned and provided value in a Union website.
+            </p>
+
+            <h2> The Problem </h2>
+            <p>
+                Twin Cities Musicians Union exclusively provides benefits for paying members, 
+                effectively excluding any musicians who might consider joining their union but don't necessarily have the means to do so at the moment. 
+                How might we expand our services so musicians who aren't members have support within the local community?
+            </p>
+
+            <h2> The Solution </h2>
+            <p>
+                We believe that adding community driven features that are accessible to anyone on the internet will create a support system for less established musicians, 
+                increase traffic to the Twin Cities Musicians Union site, and result in more members for the union and closer ties with the local music scene.
+            </p>
+
+            <div>
+                <h2>Tools Used</h2>
+                <div class="logoGridWork">
+                    <img src="images/logos/figma.png" alt="Figma">
+                    <img src="images/logos/miro.png" alt="Miro">
+                    <img src="images/logos/illustrator.png" alt="illustrator">
+                    <img src="images/logos/photoshop.png" alt="photoshop">
+                    <img src="images/logos/html.png" alt="photoshop">
+                    <img src="images/logos/css.png" alt="photoshop">
+                    <img src="images/logos/JavaScript-logo.png" alt="photoshop">
+                    <img src="images/logos/vscode.png" alt="photoshop">
+                </div> 
+            </div>
+
+            <h2> Live Demo Of Work</h2>
+            <p>DISCLAIMER: Mobile responsiveness is not prepared yet. View on desktop screen sizes around a width 1440px for best results</p>
+            <button onclick="window.open('https://jasonkarau.github.io/TCMU_Redesign_Jason_Sanjay_Margaret/','_blank')" type="button">Website Example</button>
+
+        </div>
+
+
+        <div class="content header">
+            <hr>
+            <h1>Phase 1: Research and Ideation</h1>
+            <p>
+                Our group brainstormed a Persona based off interviews (from muscicians) that would use the Twin Cities Muscians Union website.
+            </p>
+
+                <!-- The Modal -->
+                <img class="myImages" id="myImg" src="images/tcmuimg/up.png" alt="" width="auto" height="200">
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+
+            <p>
+                We also took our interview information and created an empathy map.
+            </p>
+
+                <!-- The Modal -->
+                <img class="myImages" id="myImg" src="images/tcmuimg/em.png" alt="" width="auto" height="200">
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+
+            <h2 style="margin-top: 20px;">User Interview Data and Responses</h2>
+            <p><b>Interview Goals:</b></p>
+            <ul>
+                <li>
+                    Learn more about frustrations they face when navigating the workforce, both in and out of a union
+                </li>
+                <li>
+                    Find out what barriers of entry, if any, are preventing more people from learning about TCMU and/or seeking legal representation from them
+                </li>
+            </ul>
+
+            <p><b>Questions:</b></p>
+            <ol>
+                <li>
+                    Have you heard about Twin Cities Music Union before?
+                </li>
+                <ul>
+                    <li>
+                        Yes - Anything specific? How did you hear about them? Are you a member?
+                    </li>
+                    <li>
+                        No - Would you have any interest in joining a union for musicians?
+                    </li>
+                </ul>
+
+                <li>
+                    Have you ever felt like you've been exploited while working in the music industry?
+                </li>
+
+                <li>
+                    Did you attempt to follow up on a legal level?
+                </li>
+                <ul>
+                    <li>
+                        Yes - How did that turn out?
+                    </li>
+                    <li>
+                        No - What stopped you from doing so?
+                    </li>
+                </ul>
+
+                <li>
+                    Have you ever had a negative experience performing when you felt unsupported by the venue or whoever hired you?
+                </li>
+
+                <li>
+                    If you were to join a union, what do you think the primary benefit would be?
+                </li>
+                <ul>
+                    <li>
+                        Would you have any concerns?
+                    </li>
+                </ul>
+            </ol>
+            
+            <p><b>Most Insightful Responses:</b></p>
+            <ul>
+                <li>
+                    I didn't have the resources or connections to follow up on taking legal action towards being exploited at a venue.
+                </li>
+                <li>
+                    Wasn't paid for show (several similar responses)
+                </li>
+                <li>
+                    General antagonism from venue mangers and staff
+                </li>
+                <li>
+                    Joining a Union comes with heavy baggage. For example, paying to join and such. If I don't want to pay and still be involved?
+                </li>
+                <li>
+                    Musicians must get paid for their work and treated like people rather than jukeboxes
+                </li>
+                <li>
+                    It would be nice to Make sure certain venues that practice "bad business" don't get business.
+                </li>
+                <li>
+                    Access to more opportunities, knowing the right people to email
+                </li>
+            </ul>
+
+            <h2 style="margin-top: 20px;">Affinity Diagram And Pathway</h2>
+            <img class="myImages" id="myImg" src="images/tcmuimg/af1.png" alt="" width="auto" height="200">
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+
+            <img class="myImages" id="myImg" src="images/tcmuimg/af2.png" alt="" width="auto" height="200">
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+
+                <p><b>What these responses lead to:</b></p>
+
+                <p>
+                    There seemed to be a clear distinction of how people felt about their musician related problems not being heard and how there is no place to go to share them.
+                    TCMU is currently only an informational site for Union members. <b>How can we make TCMU a central hub for everyone having problems in the music industry?</b>
+                </p>
+            
+        </div>
+
+        <div class="content header">
+            <hr>
+            <h1>Phase 2: Analysis</h1>
+
+            <h2 style="margin-top: 20px;">Other Union Websites and What They Are Doing</h2>
+            <p></p>
+
+            <img class="myImages" id="myImg" src="images/tcmuimg/ca.png" alt="" width="auto" height="200">
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+
+            <p>
+                We looked at other states musicians union's websites mainly from a place like California, where the music business is very saturated.
+                It was interesting, they seemed to look way out of date. But they did things particularily well when it comes to hierarchy.
+                Important buttons are at the top. And there organization of information was on point. Unfortunately, none of the sites featured a clear way for non members to get involved. 
+                The Competitor analysis was more looking for heuristic ideas. 
+            </p>
+
+            <h2 style="margin-top: 20px;">Nielson Norman Heuristic Analysis of Current Site</h2>
+            <ol>
+                <li>
+                    Visibility of system status
+                </li>
+                <ul>
+                    <li>
+                        All navigation has hover/active states except for the "TCMU Members Green Room" tab which is missing an active state
+                    </li>
+                </ul>
+
+                <li>
+                    Match between system and the real world
+                </li>
+                <ul>
+                    <li>
+                        Reasonably clear terminology, very text heavy though
+                    </li>
+                    <li>
+                        No icons present other than an up arrow to return to the top of the page
+                    </li>
+                </ul>
+
+                <li>
+                    User control and freedom
+                </li>
+                <ul>
+                    <li>
+                        Main logo is easily accessible from every page and links back to home on click
+                    </li>
+                </ul>
+
+                <li>
+                    Consistency and standards   
+                </li>
+                <ul>
+                    <li>
+                        Every page in the News dropdown has a different name but the same layout with little to no pictures. It's not clear what each of these sections is meant for, or if all of them are even news related.
+                    </li>
+                </ul>
+
+                <li>
+                    Error prevention
+                </li>
+                <ul>
+                    <li>
+                        Contact form has some error prevention that won't let users submit without their name or email
+                    </li>
+                    
+                </ul>
+
+                <li>
+                    Recognition rather than recall
+                </li>
+                <ul>
+                    <li>
+                        Site is very informational and there is not any content that fits in the criteria of this standard
+                    </li>
+                </ul>
+
+                <li>
+                    Flexibility and efficiency of use
+                </li>
+                <ul>
+                    <li>
+                        Using tab to sort through text fields. There are no text accessibility features though.
+                    </li>
+                </ul>
+
+                <li>
+                    Aesthetic and minimalist design
+                </li>
+                <ul>
+                    <li>
+                        The design is very minimal and repetitive over every page. Every page looks almost identical.
+                    </li>
+                </ul>
+
+                <li>
+                    Help users recognize, diagnose, and recover from errors
+                </li>
+                <ul>
+                    <li>
+                        Only has error prevention with pop ups in the contact section. It's hard to go in the wrong direction as a user for this site.
+                    </li>
+                </ul>
+
+                <li>
+                    Help and documentation
+                </li>
+                <ul>
+                    <li>
+                        No help documentation provided from website.
+                    </li>
+                </ul>
+            </ol>
+
+            <h2 style="margin-top: 20px;">Short UI Analysis</h2>
+            <img class="myImages" id="myImg" src="images/tcmuimg/ha1.png" alt="" width="auto" height="200">
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+        </div>
+
+        <div class="content header">
+            <hr>
+            <h1>Phase 3: Ideation And Prototyping Phase</h1>
+            <h2 style="margin-top: 20px;">Preparing the Narrative</h2>
+                <p>
+                    Why would our user go to TCMU and what would the scenario be? We prepared a UX scenario and a story board to get the message across from a usability perspective.
+                </p>
+
+                <img class="myImages" id="myImg" src="images/tcmuimg/uxs.png" alt="" height="200">
+                    <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                    </div>
+
+                <div class="caseGrid">
+                    <!-- <img class="myImages" id="myImg" src="images/offsetimg/fpm5.png" alt="" height="200" style="padding: 20px;" > -->
+                    <img class="myImages" id="myImg" src="images/tcmuimg/sb.png" alt="" height="200">
+                    <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                    </div>
+                </div>
+
+                <h2 style="margin-top: 20px;">Applying The Experience To The Site Map</h2>
+
+                <img class="myImages" id="myImg" src="images/tcmuimg/sm.png" alt="" height="200">
+                    <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                    </div>
+
+                <p>
+                    We needed a way to increase non member traffic on TCMU. So, we made valuable additions. 
+                    <br><br>
+                    <b>Booking</b> is a way for interested venue managers to book an artist that is featured with TCMU. 
+                    Venue managers that practice good business with muscians want musicians that practice good business with the venue. 
+                    That is a relationship wish that our interviewees seemed to want. And increases traffic on the website for all sides.
+                    <i>(The title of "Booking" was originally called "Live Music Marketplace". When doing Lo-Fi testing with users, 
+                        they were confused that booking artists was related to that title. So thats why we changed it to Booking)</i>
+                    <br><br>
+                    <b>Report An Incident</b> would be a way for musicians to report venues harmful practices to TCMU. 
+                    So members and non members can look out for places that wont be of value to them.
+                    <br><br>
+                    <b>Around the Union</b> was originally its own news section. But that title expresses the aim to encapsulate all of the Unions news. 
+                    All of the news and blogs are categorized and orginized under that section.
+                    <br><br>
+                    <b>Members Green Room</b> was redesigned and re-orgainzed
+                    <br><br>
+                    <b>Login and Register Buttons</b> were added to the top of the page. They were orginally part of the main navigation and not higher in the hierarchy of the site.
+                </p>
+
+                                
+                <h2 style="margin-top: 40px;">Applying A Style Guide for Design</h2>
+
+                    <img class="myImages" id="myImg" src="images/tcmuimg/sg1.png" alt="" height="200" style="border: 5px solid black;">
+                    <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                    </div>
+        </div>
+
+    </section>
+
+    <img src="images/splitter-black-top.png" class="splitterBlackTop" alt="splitter-black-top">
+
+    <section class="containerOff">
+        <div class="content header" style="margin-top: 0px;">
+            <h1 style="margin-bottom: 20px;">Phase 5: Final Prototype</h1>
+
+            <div class="caseGrid">
+                <img src="images/tcmuimg/screencaps/FireShot Capture 133 - Twin Cities Musicians Union - 127.0.0.1.png" class="caseImg" alt="">
+                <img src="images/tcmuimg/screencaps/FireShot Capture 124 - Twin Cities Musicians Union - 127.0.0.1.png" class="caseImg" alt="">
+                <img src="images/tcmuimg/screencaps/FireShot Capture 127 - Twin Cities Musicians Union - 127.0.0.1.png" class="caseImg" alt="">
+            </div>
+            <button onclick=" window.open('','_blank')" type="button">Final Desktop Prototype</button>
+            <button onclick=" window.open('','_blank')" type="button">Final Mobile Prototype</button>
+            <p>DISCLAIMER: Mobile responsiveness for website example is not prepared yet. View on desktop screen sizes around a width 1440px for best results</p>
+            <button onclick="window.open('https://jasonkarau.github.io/TCMU_Redesign_Jason_Sanjay_Margaret/','_blank')" type="button">Website Example</button>
+            
+        </div>
+    </section>
+
+    <img src="images/splitter-orange-top.png" class="splitterBlackTop" alt="splitter-black-top" style="background-color:black;">
+
+    <section class="containerOn">
+        <div class="content header" style="margin-top: 0px;">
+            <h1>Phase 6: Reflection</h1>
+            <h2 style="margin-top: 20px;">Where Do We Go From Here?</h2>
+            <p>
+                Theres a lot on the to do list... We got plenty of great feedback from leaders and collegues. 
+                <br><br>
+
+            <h2 style="margin-top: 20px;">What I Specialized In During This Project</h2>
+            <ul>
+                <li>
+                    All the Web Development including HTML, CSS, and JS.
+                </li>
+            </ul>
+
+            <h2 style="margin-top: 20px;">What We Need To Add</h2>
+            <ul>
+                <li>
+                    Mobile responsiveness to the example site
+                </li>
+                <li>
+                    Heat Map research using "Hot Jar"
+                </li>
+                <li>
+                    Present our selected features in a better way
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <img src="images/splitter-orange-bottom.png" class="splitterOrangeBottom" alt="splitter-black-top">
+
+    <div class="container" style="margin-left: 10px; margin-right: 10px;">
+        <h1 class="footcenter">Thanks</h1>
+          <p class="footcenter" style="margin-right: 0px;">
+            Find what your looking for? Get in touch!
+          </p>
+      </div>
+
+    <footer class="page-footer font-small" id="footer">
+        <a class="mailto" id="contact" href="mailto:karaudesign@outlook.com">
+          <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_ilujvy3v.json" background="transparent"  speed="1"  style= "height: 100px; width: 100px; "  loop  autoplay></lottie-player>
+        </a>
+        <!-- Copyright -->
+        <div class="footer-copyright py-3">© 2020 Copyright:
+          <a class="footer-a" href="#"> karaudesign.com</a>
+        </div>
+        <!-- Copyright -->
+    
+      </footer>
+    
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/btt.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
