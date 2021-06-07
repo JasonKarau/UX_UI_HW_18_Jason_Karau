@@ -646,7 +646,7 @@ blockquote {
         grid-column-gap: 1em;
         justify-content: center;
         row-gap: 3em;
-        margin: 0px 0px 0px 0px;
+        margin: 0px 0px 20px 0px;
     }
 
     .button-wide {
